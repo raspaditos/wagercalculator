@@ -1,0 +1,21 @@
+<div class="calculator">
+        <h1>Wager Calculator</h1>
+        <form id="jackpotForm">
+            <div class="form-group">
+                <label for="odds">Odds of Winning (1 in X): </label>
+                <input type="number" id="odds" name="odds" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="jackpot">Win Amount ($): </label>
+                <input type="number" id="jackpot" name="jackpot" step="0.01" min="0" required>
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="calculateWager()">Calculate</button>
+            </div>
+            <div class="form-group">
+                <label for="result">Expected Wager to Win ($): </label>
+                <input type="number" id="result" name="result" readonly>
+            </div>
+        </form>
+  <div class="credit"><a href="https://raspaditos.mx">by Raspaditos.mx</a></div>
+</div>
